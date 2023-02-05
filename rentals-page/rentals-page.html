@@ -1,0 +1,197 @@
+<link rel="stylesheet" href="../nav-bar/nav-bar.css"></link>
+<script type="text/javascript" src="../nav-bar/nav-bar.js"></script>
+
+<!DOCTYPE html>
+<html>
+<head>
+<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{border:2px; border-style: groove}
+body{font-family: 'Poppins';font-size: 16px;}
+
+
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: #FFD700;
+  color: #000000;
+  font-family: 'Poppins';
+  border: groove;
+  font-size: 14px;
+  padding: 5px 5px;
+  margin: 5px 5px;
+  cursor: pointer;
+}
+
+select {
+  width: 25%;
+  font-family: 'Poppins';
+  font-size: 14px;
+  padding: 10px 10px;
+  border: groove;
+  border-radius: 2px;
+  background-color: #FFD700;
+}
+
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 10px;
+}
+
+.left {
+  left: 0;
+  background-color: #FFD700;
+}
+
+.right {
+  right: 0;
+  background-color: rgb(253, 255, 255);
+}
+
+.dropbtn {
+  background-color: #bbdddc;
+  color: rgb(0, 0, 0);
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #eaedea;}
+</style>
+</head>
+
+<body>
+<style>
+  div {
+  padding-top: 5px;
+  padding-bottom: 15px;
+}
+</style>
+
+
+  <div class="split left">
+    <div class="centered">
+      <div style="text-align:center">
+        <div class="relative">
+
+          <img src="../resources/bikebuddy-logo.png" alt="logo" width="50px" height="50px">
+          <h1>Rent a bike near you today!</h1>
+          <p>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10717.947063435642!2d-122.07009357347414!3d36.99870815862499!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808e41a670cccc5f%3A0x32aed255a8a83622!2sStevenson%20College!5e0!3m2!1sen!2sus!4v1675552159625!5m2!1
+              sen!2sus" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </p>
+    </div>
+  </div>
+</div>
+
+<div class="split right">
+  <div class="centered">
+    <div style="text-align:center">
+      <h4>
+        <div class="nav-bar">
+          <div class="icon">
+            <div class="buttons-box">
+              <img src='../resources/bikebuddy-logo.png'></img>
+              <li><a onclick="route_to_Home_page()">Home</a></li>
+              <li><a onclick="route_to_Rentals_page()">Rentals</a></li>
+              <li><a onclick="route_to_Share_page()">Share</a></li>
+              <li><a onclick="route_to_Map_page()">Map</a></li>
+              <li><a onclick="open_dropdown_menu()">More</a>
+                <ul class="dropdown" id='drop-down-menu'>
+                  <li><a onclick="route_to_Founders_page()">Founders</a></li>
+                  <li><a onclick="route_to_Legal_page()">Legal</a></li>
+                  <li><a onclick="route_to_About_page()">About</a></li>
+                  <li><a onclick="route_to_Partnerships_page()">Partnerships</a></li>
+                </ul>
+              </li>
+            </div>
+          </div>
+        </div>
+      </h4>
+<form action="/action_page.php">
+  <label for="fname">Name:</label><br>
+  <input type="text" id="fname" name="fname" value=""><br>
+
+<form action="/action_page.php">
+    <label for="fname">Email:</label><br>
+    <input type="text" id="fname" name="fname" value=""><br>
+
+<form action="/action_page.php">
+      <label for="fname">Phone number:</label><br>
+      <input type="text" id="fname" name="fname" value=""><br>
+
+<form action="/action_page.php">
+      <label for="fname">Zipcode:</label><br>
+      <input type="text" id="fname" name="fname" value=""><br>
+
+  <form action="/action_page.php">
+    <h4><label for="cars">What type of bike would you like to rent?</label></h4>
+    <select name="cars" id="cars">
+      <option value="Electric Bike">Electric Bike</option>
+      <option value="Road Bike">Road Bike</option>
+      <option value="Mountain Bike">Mountain Bike</option>
+      <option value="Hybrid Bike">Hybrid Bike</option>
+      <option value="Touring Bike">Touring Bike</option>
+    </select>
+    <br><br>
+  </form>
+
+  <h4>How long will you be needing the bike for? </h4>
+<form action="/action_page.php">
+  <label for="fname">Enter approximate time here:</label><br>
+  <input type="text" id="fname" name="fname" value=""><br>
+
+<h4>How long will you be needing the bike for? </h4>
+<form action="/action_page.php">
+  <label for="fname">Enter approximate time here:</label><br>
+  <input type="text" id="fname" name="fname" value=""><br>
+
+<h4>Approximately how many miles will you be traveling? </h4>
+<form action="/action_page.php">
+  <label for="fname">Enter approximate miles here:</label><br>
+  <input type="text" id="fname" name="fname" value=""><br>
+
+  <form action="/action_page.php">
+    <input type="submit" value="Submit">
+  </form>
+
+    </div>
+  </div>
+</div>
+
+
+
+</form>
+  </div>
+</div>
+</body>
+</html>

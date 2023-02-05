@@ -1,0 +1,23 @@
+<link rel="stylesheet" href="../nav-bar/nav-bar.css"></link>
+<script type="text/javascript" src="../nav-bar/nav-bar.js"></script>
+
+<body>
+  <div class="nav-bar">
+    <div class="icon">
+      <div class="buttons-box">
+        <img src='../resources/bikebuddy-logo.png'></img>
+        <li><a onclick="route_to_Home_page()">Home</a></li>
+        <li><a onclick="route_to_Rentals_page()">Rentals</a></li>
+        <li><a onclick="route_to_Share_page()">Share</a></li>
+        <li><a onclick="open_dropdown_menu()">More</a>
+          <ul class="dropdown" id='drop-down-menu'>
+            <li><a onclick="route_to_Founders_page()">Founders</a></li>
+            <li><a onclick="route_to_Legal_page()">Legal</a></li>
+            <li><a onclick="route_to_About_page()">About</a></li>
+            <li><a onclick="route_to_Partnerships_page()">Partnerships</a></li>
+          </ul>
+        </li>
+      </div>
+    </div>
+  </div>
+</body>

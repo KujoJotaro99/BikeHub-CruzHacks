@@ -1,0 +1,127 @@
+<link rel="stylesheet" href="../nav-bar/nav-bar.css"></link>
+<script type="text/javascript" src="../nav-bar/nav-bar.js"></script>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Bike Rental</title>
+
+<style>
+body,h1,h2,h3,h4,h5,h6{
+font-family: "Poppins",}
+.w3-bar,h1,button {font-family: "Poppins"}
+.fa-anchor,.fa-coffee {font-size:200px}
+
+body {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 50%;
+    background-color: #FFD700;
+    padding: 0px;
+
+}
+
+h1 {
+
+text-align: center;
+color: white;
+
+}
+
+p{
+
+text-align: center;
+font-size:15px
+
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+.bb-rental {
+
+color: white;
+
+}
+
+.bb-bikes {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.bb-twothird {
+color: black;
+}
+
+
+</style>
+</head>
+<body>
+<div class="nav-bar">
+    <div class="icon">
+      <div class="buttons-box">
+        <img src='../resources/bikebuddy-logo.png'></img>
+        <li><a onclick="route_to_Home_page()">Home</a></li>
+        <li><a onclick="route_to_Rentals_page()">Rentals</a></li>
+        <li><a onclick="route_to_Share_page()">Share</a></li>
+        <li><a onclick="route_to_Map_page()">Map</a></li>
+        <li><a onclick="open_dropdown_menu()">More</a>
+          <ul class="dropdown" id='drop-down-menu'>
+            <li><a onclick="route_to_Founders_page()">Founders</a></li>
+            <li><a onclick="route_to_Legal_page()">Legal</a></li>
+            <li><a onclick="route_to_About_page()">About</a></li>
+            <li><a onclick="route_to_Partnerships_page()">Partnerships</a></li>
+          </ul>
+        </li>
+      </div>
+    </div>
+</div>
+
+<img class="main-img-1" width='100%' height = 'auto%' top='0px' src='../resources/Cover-image.jpeg'></img>
+ 
+<!-- Header -->
+<header class="bb-container bb-center" style="padding:0px 0px">
+  <h1 class="bb-margin bb-jumbo">Bike Buddy</h1>
+</header>
+
+<div class="bb-rental">
+      <h2>Rental Information</h2>
+      <h5 class="bb-padding-32">Bike Buddies is geared towards UCSC students who are in need of quick transportation. With bike buddies, students will have easy access to nearby transportion that relieves traffic stress and overpacked loop and metro buses.</h5>
+</div>
+
+
+<div class="bb-twothird">
+      <h3>How Bike Buddies Work</h3>
+      <h5 class="bb-padding-32">Bike Buddies is a bike exchange operation where those want to make a profit can lend their bike while buyers can use these bikes. There are also owned bikes by Bike Buddies that you can choose from that can also be lent to buyers. There is also a food delivery service where Bike Buddies' workers deliver food or supplies by bike to buyers. This whole exchange is meant to bring harmony to the UCSC community through quick transportation and shopping ease.</h5>
+        <p class="bb-text-grey">To rent now, go here. </p>
+    </div>
+
+<div class="center">
+  <button>Click here</button>
+</div>
+
+</body>
+</html>
+<div class="container" style="height: 100px; background-color: darkorange; text-align: center; display: flex;
+justify-content: center; overflow: hidden;" >
+    <div class="column" style="float:left; padding: 20px; margin-right: 10%;">
+      <div style="width: 100px; color: white;">Legal</div>
+      <div style="width: 100px; color: white;">Partnerships</div>
+      <div style="width: 100px; color: white;">Terms and Conditions</div>
+    </div>
+    <div class="column" style="float:left; padding: 20px;">
+        <div style="width: 100px; color: white;">Copyright @BikeHub 2022</div>
+        <div style="width: 100px; color: white;">Sponsors</div>
+        <div style="width: 100px; color: white;"></div>
+    </div>
+  </div>
+
+
